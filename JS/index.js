@@ -25,3 +25,13 @@ const handleMessageCount = () => {
   var charLeft = maxLength - msgLength;
   msgCount.innerText = charLeft;
   }
+
+
+
+const nav = document.getElementById('navhamburger')
+
+nav.addEventListener('click', click)
+
+function click() {
+  alert('Hello, World!')
+}

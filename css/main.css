@@ -333,7 +333,11 @@ nav ul li a:hover {
   padding: 10px;
 }
 /**Sidebar Ends**/
-
+#navhamburger{
+  font-size: 2rem;
+  display: none;
+  color: white;
+}
 /**Services Begins**/
 .services-image {
   width: 100%;
@@ -569,9 +573,15 @@ textarea {
   text-align: center;
 }
 /*******RESPONSIVE MOBILE.******/
-@media only screen and (max-width: 460px) {
+@media (max-width: 460px) {
   header nav {
     display: none;
+  }
+  #navhamburger{
+    font-size: 2rem;
+    display: block;
+    color: white;
+    float: right;
   }
   body{
     overflow-x: hidden;
@@ -655,9 +665,6 @@ textarea {
     transition: translate;
     margin-left: 2.2rem;
   }
-  .services-mainboxes:hover {
-    transform: translateY(20px);
-  }
   .services-text h1 {
     font-size: 25px;
   }
@@ -730,6 +737,9 @@ textarea {
     left: 25%;
     margin-top: 5rem;
   }
+  .services-mainboxes:hover{
+    border-radius: none;
+  }
   .contact-cta:hover {
     background: #d42607;
   }
@@ -747,9 +757,15 @@ textarea {
   }
 
 }
-@media only screen and (max-width: 320px) {
+@media (max-width: 320px) {
   body{
     overflow-x: hidden;
+  }
+  #navhamburger{
+    font-size: 2rem;
+    display: block;
+    float: right;
+    color: white;
   }
   .hero-image {
     height: 120vh;
@@ -774,6 +790,9 @@ textarea {
   }
   .about {
     height: 130vh;
+  }
+  .services-mainboxes:hover{
+    border-radius: none;
   }
   .contact-header {
     font-size: 10px;
