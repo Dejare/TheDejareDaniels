@@ -1,0 +1,808 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;800&display=swap");
+@-ms-viewport {
+
+  width: device-width;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: unset;
+}
+body{
+  overflow-x: hidden;
+}
+header{
+  margin-bottom: 0px !important;
+}
+.container{
+  width: 100% !important
+}
+.overallcontainer {
+  background: white;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 1000;
+}
+.container1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 1100;
+}
+
+.dash {
+  margin: 0 15px;
+  width: 35px;
+  height: 15px;
+  border-radius: 8px;
+  background: tomato;
+  z-index: 5;
+}
+
+.uno {
+  margin-right: -18px;
+  transform-origin: center left;
+  animation: spin 3s linear infinite;
+  z-index: 5;
+}
+.dos {
+  transform-origin: center right;
+  animation: spin2 3s linear infinite;
+  animation-delay: 0.2s;
+  z-index: 5;
+}
+.loader-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  color: tomato;
+}
+.tres {
+  transform-origin: center right;
+  animation: spin3 3s linear infinite;
+  animation-delay: 0.3s;
+  z-index: 5;
+}
+
+.cuatro {
+  transform-origin: center right;
+  animation: spin4 3s linear infinite;
+  animation-delay: 0.4s;
+  z-index: 5;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  30% {
+    transform: rotate(370deg);
+  }
+  35% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-180deg);
+  }
+  35% {
+    transform: rotate(-190deg);
+  }
+  40% {
+    transform: rotate(-180deg);
+  }
+  78% {
+    transform: rotate(-180deg);
+  }
+  95% {
+    transform: rotate(-360deg);
+  }
+  98% {
+    transform: rotate(-370deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  27% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  45% {
+    transform: rotate(190deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  62% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  80% {
+    transform: rotate(370deg);
+  }
+  85% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  38% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(-360deg);
+  }
+  65% {
+    transform: rotate(-370deg);
+  }
+  75% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+html,
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), #f6f6f6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/herobg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+}
+.hero-text {
+  position: absolute;
+  top: 30%;
+  margin: 0px 5rem;
+  font: "open sans";
+}
+.hero-text h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 0px;
+  font: "Montserrat";
+  animation-delay: 0.5s;
+}
+.hero-text hr {
+  width: 3rem;
+  margin: 30px 0px;
+  height: 5px;
+  background: hsl(9, 100%, 64%);
+  border: none;
+}
+.hero-text p {
+  color: white;
+  text-transform: initial;
+  font-size: 20px;
+  letter-spacing: 0px;
+  animation-delay: 1s;
+}
+.hero-cta button {
+  margin: 20px 0px;
+  background: tomato;
+  padding-top: 16px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  font-size: 1rem;
+  animation-delay: 1.5s;
+}
+button a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+button:hover {
+  background-color: rgb(194, 40, 13);
+}
+.footer-copyright {
+  background: rgb(175, 86, 71);
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  margin: 1rem;
+}
+/**Hero section ends**/
+/**Header begins**/
+header {
+  width: 100%;
+  background-color: black;
+}
+.header-container {
+  width: 95%;
+  z-index: 2;
+  background-color: black;
+}
+.bg-header {
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 5rem;
+  z-index: -1;
+}
+label {
+  float: left;
+  color: white;
+  margin: 20px 5rem;
+  text-decoration: underline tomato;
+  animation-delay: 2s;
+  position: absolute;
+}
+nav {
+  float: right;
+  animation-delay: 2s;
+  position: static;
+  top: -80%;
+}
+nav ul li {
+  display: inline-block;
+  margin: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 400;
+  animation-delay: 2.5s;
+}
+nav ul li a:hover {
+  color: tomato;
+  text-decoration: overline;
+}
+/**Header ends, sidebar begins**/
+.sidebar img {
+  width: 20px;
+  position: relative;
+  top: 35%;
+  display: block;
+  margin: 20px;
+}
+.sidebar {
+  width: 5%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), #f6f6f6;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  animation-delay: 2.5s;
+  z-index: 6;
+}
+.sidebar img:hover {
+  background-color: none;
+  border: 2px solid #ff6347;
+  border-radius: 35px;
+  padding: 10px;
+}
+/**Sidebar Ends**/
+
+/**Services Begins**/
+.services-image {
+  width: 100%;
+  height: 150vh;
+  background: #b8b0b0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.services-header h1 {
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+}
+.services-header h2 {
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+.services-divi {
+  width: 10%;
+  height: 0.4rem;
+  background-color: tomato;
+  position: absolute;
+  right: 45%;
+  margin-top: 5px;
+}
+.services-text {
+  position: absolute;
+  margin: 7rem 5rem;
+  font: "open sans";
+}
+.services-text h1 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 0px;
+  font: "Montserrat";
+  animation-delay: 0.5s;
+}
+.services-text p {
+  color: rgb(15, 15, 15);
+  text-transform: initial;
+  font-size: 20px;
+  letter-spacing: 0px;
+  animation-delay: 1s;
+}
+.services-text hr {
+  width: 3rem;
+  margin: 30px 0px;
+  height: 5px;
+  background: hsl(9, 100%, 64%);
+  border: none;
+}
+.servicesvg {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  position: absolute;
+  right: 10%;
+  margin-top: 7rem;
+}
+.services-mainboxes {
+  position: absolute;
+  margin: 25rem 5rem 5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 33.3%;
+  height: 100px;
+}
+.services-mainboxes p{
+    margin-top: 2rem;
+    font-weight: 500;
+    margin: 1rem 1rem 1rem 1rem;
+    height: .5rem;
+    padding: .2rem;
+}
+.services-mainboxes .box1,
+.box2,
+.box3,
+.box4 {
+  padding: 2rem 2rem;
+  margin: 10px;
+  padding-bottom: 20rem;
+  flex-basis: 33.3%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.services-mainboxes .box1 , .box2, .box3 {
+  background: #e44c31;
+}
+.services-mainboxes .box1:hover , .box2:hover, .box3:hover{
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10% 20% 20% 10%;
+}
+/**End of service Section**/
+.wave-border {
+  height: 150px;
+}
+/**About**/
+.about {
+  width: 100%;
+  height: 80vh;
+  background: rgb(22, 22, 22);
+}
+.about h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+.about hr {
+  width: 10%;
+  height: 0.8rem;
+  background-color: tomato;
+  position: absolute;
+  right: 45%;
+  margin-top: 5px;
+  border: none;
+}
+
+.about img {
+  width: 20rem;
+  height: 25rem;
+  padding: 2rem;
+  float: right;
+  margin-right: 5rem;
+}
+.details{
+  width: 100%;
+  margin-top: 7rem;
+}
+.details h2 {
+  color: white;
+  text-align: left;
+  margin-left: 3rem;
+  margin-right: 5rem;
+  padding-bottom: 2rem;
+}
+.details h2 span {
+  color: tomato;
+  text-decoration: underline;
+}
+.details p {
+  color: white;
+  margin-left: 3rem;
+  margin-right: 5rem;
+}
+/**About ENDS**/
+.wave-border {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), #f6f6f6;
+}
+/**Contact **/
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  margin: 0 3rem;
+  border: none;
+}
+.contact-text h1 {
+  margin-bottom: 1rem;
+  color: #b6b6b6;
+}
+.contact-text {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: azure;
+}
+.contactform {
+  display: flex;
+  flex-direction: column;
+}
+.form-input {
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.562);
+  transition: border 500ms;
+  padding: 1.75rem 1rem 0.5rem;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  width: 55%;
+}
+.msg {
+  height: 20vh;
+}
+textarea {
+  height: 300px;
+  resize: none;
+  font: inherit;
+}
+.form-input::placeholder {
+  color: #b6b6b6;
+}
+.contactform {
+  color: white;
+}
+.contactform button {
+  background: transparent;
+  border: 2px solid azure;
+  padding: 0.4rem 0.8rem;
+  color: azure;
+  margin-bottom: 2rem;
+}
+.presskit a {
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: azure;
+}
+.presskit a:hover {
+  border-left: 2px solid azure;
+  padding: 0.2rem;
+  text-decoration: underline tomato;
+}
+.presskit a:last-child {
+  margin-left: 3rem;
+}
+.form-input:hover,
+.form-input:focus {
+  outline: none;
+  border-color: azure;
+}
+.links {
+  flex-direction: row;
+}
+.footercopyright {
+  background: rgb(22, 22, 22);
+  color: azure;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  text-align: center;
+}
+/*******RESPONSIVE MOBILE.******/
+@media only screen and (max-width: 460px) {
+  header nav {
+    display: none;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .hero-text {
+    position: absolute;
+    top: 30%;
+    margin: 0px 3rem;
+    font: "open sans";
+    font-size: 10px;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 25px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+  .hero-text hr {
+    width: 3rem;
+    position: relative;
+    margin: 20px 0px;
+    height: 5px;
+    background: hsl(9, 100%, 64%);
+    left: 8rem;
+  }
+  .contact{
+    margin: 0 1rem;
+  }
+  /**Services Design**/
+  .services-text {
+    position: absolute;
+    margin: 3rem 3rem;
+    font: "open sans";
+    font-size: 20px;
+    text-align: center;
+  }
+  .services-image{
+      height: 260vh;
+  }
+  .servmargin{
+      margin-top: 7rem;
+  }
+  .services-text h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 0px;
+    font: "Montserrat";
+    animation-delay: 0.5s;
+  }
+  .services-text p {
+    color: rgb(15, 15, 15);
+    text-transform: initial;
+    font-size: 20px;
+    letter-spacing: 0px;
+    animation-delay: 1s;
+  }
+  .services-text hr {
+    width: 3rem;
+    margin: 20px 0px;
+    position: relative;
+    height: 5px;
+    background: hsl(9, 100%, 64%);
+    border: none;
+    left: 7.5rem;
+  }
+  .servicesvg img {
+    width: 4rem;
+  }
+  .servicesvg {
+    margin-top: 23rem;
+    right: 10rem;
+    width: 300px;
+  }
+  .services-mainboxes {
+    position: absolute;
+    flex-direction: column;
+    height: 100%;
+    width: 300px;
+    transition: translate;
+    margin-left: 2.2rem;
+  }
+  .services-mainboxes:hover {
+    transform: translateY(20px);
+  }
+  .services-text h1 {
+    font-size: 25px;
+  }
+  .services-text p {
+    font-size: 20px;
+  }
+  .services-mainboxes .box1,
+  .box2,
+  .box3,
+  .box4 {
+    background: tomato;
+  }
+  .sidebar {
+    display: none;
+  }
+  /**About**/
+  .about {
+    width: 100%;
+    height: 160vh;
+    background: rgb(22, 22, 22);
+  }
+  .about h1 {
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .about hr {
+    width: 10%;
+    height: 0.8rem;
+    background-color: tomato;
+    position: absolute;
+    right: 45%;
+    margin-top: 5px;
+    border: none;
+  }
+
+  .about img {
+    width: 20rem;
+    height: 25rem;
+    padding: 2rem;
+    float: center;
+    position: absolute;
+    left: 15%;
+  }
+  .details {
+    margin-top: 25rem;
+    width: 100%;
+  }
+  .details h2 {
+    color: white;
+    text-align: center;
+  }
+  .details h2 span {
+    color: tomato;
+    text-decoration: underline;
+  }
+  .details p {
+    color: white;
+    margin-left: 1rem;
+    margin-right: .5rem;
+  }
+  .contact-cta {
+    text-decoration: none;
+    color: white;
+    padding: 16px 35px 16px 16px;
+    font-size: 1.3rem;
+    background: tomato;
+    position: relative;
+    left: 25%;
+    margin-top: 5rem;
+  }
+  .contact-cta:hover {
+    background: #d42607;
+  }
+  .contentbg {
+    width: 100%;
+    height: 35vh;
+    background: rgba(184, 176, 176, 0.4);
+  }
+  .contact-header {
+    width: 100%;
+    height: 25vh;
+  }
+  .form-input{
+      width: 100%;
+  }
+
+}
+@media only screen and (max-width: 320px) {
+  body{
+    overflow-x: hidden;
+  }
+  .hero-image {
+    height: 120vh;
+  }
+  .hero-text {
+    top: 10%;
+  }
+  textarea{
+      height: 400px;
+  }
+  .about img {
+    right: 0.5%;
+  }
+  .details h2 {
+    font-size: 20px;
+  }
+  .details p {
+    margin-left: 3rem;
+  }
+  .details p span {
+    display: none;
+  }
+  .about {
+    height: 130vh;
+  }
+  .contact-header {
+    font-size: 10px;
+  }
+  .contact-cta {
+    padding: 12px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .footerbg {
+    height: 10vh;
+  }
+  .details p {
+    color: white;
+    margin-left: 1rem;
+    margin-right: .5rem;
+  }
+  .hero-text hr {
+    position: relative;
+    left: 40%;
+  }
+  .services-image{
+      height:370vh;
+  }
+  .services-mainboxes{
+      margin-left: 1rem;
+  }
+  .services-text hr {
+    position: relative;
+    left: 40%;
+  }
+}
