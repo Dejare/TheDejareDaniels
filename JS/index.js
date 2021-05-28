@@ -33,5 +33,5 @@ const nav = document.getElementById('navhamburger')
 nav.addEventListener('click', click)
 
 function click() {
-  alert('Hello, World!')
+  alert('Hey, We Noticed You Clicked On The Nav, this site is under a development test run. We will get the nav working ASAP. Thanks, Dejare.')
 }
