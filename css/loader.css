@@ -35,13 +35,13 @@
     top: 68%;
     left: 41%;
     transform: translate(-41% -68%);
-    color:tomato;
+    color:#e73131;
 }
 .loadergblue .loaderblue{
     width: 30px;
-    background-color:tomato;
+    background-color:#e73131;
     height: 100px;
-    border: 2px solid tomato;
+    border: 2px solid #e73131;
     border-radius: 25px;
     animation: loader;
     animation-duration: 2s;
@@ -50,9 +50,9 @@
 }
 .loadergblue .loaderblue2{
     width: 30px;
-    background-color:tomato;
+    background-color:#e73131;
     height: 80px;
-    border: 2px solid tomato;
+    border: 2px solid #e73131;
     border-radius: 25px;
     margin-top: 10px;
     margin-left: 10px;
@@ -63,9 +63,9 @@
 }
 .loadergblue .loaderblue3{
     width: 30px;
-    background-color:tomato;
+    background-color:#e73131;
     height: 60px;
-    border: 2px solid tomato;
+    border: 2px solid #e73131;
     border-radius: 25px;
     margin-top: 20px;
     margin-left: 10px;
