@@ -25,25 +25,27 @@
             <h1>Dejare</h1>
         </div>
     </div>
-    <header>
-        <div class="header-container">
-            <div class="bg-header">
-                <label class="animated fadeInDown" for="Logo">Dejare!
-                </label>
-                <div id="navhamburger">&congdot;</div>
-                <nav>
-                    <ul>
-                        <li><a class="animated fadeInDown" href="#">Home</a></li>
-                        <li><a class="animated fadeInDown" href="#">Services</a></li>
-                        <li><a class="animated fadeInDown" href="#">About</a></li>
-                        <li><a class="animated fadeInDown" href="#">Contact</a></li>
-                    </ul>
-                </nav>
+    <header class="header">
+        <label for="logo">Dejare</label>
+        <div id="hamburger">&ddotseq;</div>
+        <nav id="navo">
+            <div id="closehamburger">&times;</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+            <!--icons-->
+            <div class="socialicons">
+                <img src="./icons/facebook.png" alt="">
+                <img src="./icons/twitter.png" alt="">
+                <img src="./icons/instagram.png" alt="">
+                <img src="./icons/github.png" alt="">
             </div>
-        </div>
+        </nav>
     </header>
     <!--Header finishes, hero starts-->
-
     <div class="hero-section">
         <div class="hero-image">
             <div class="hero-text">
@@ -66,10 +68,10 @@
         <!--Hero finishes, sidebar starts-->
         <div class="sidebar">
             <div class="sidebar animated slideInDown">
-               <a href="https://twitter.com/Therealnicron"><img src="./Icons/facebook1.png" /></a> 
-               <a href="https://github.com/Dejare"> <img src="./Icons/facebook2.png" /> </a>
-                <img src="./Icons/facebook3.png" />
-                <a href="https://twitter.com/Therealnicron"><img src="./Icons/facebook4.png" /></a>
+               <a href="https://twitter.com/Therealnicron"><img src="./Icons/facebook.png" /></a> 
+               <a href="https://github.com/Dejare"> <img src="./Icons/github.png" /> </a>
+                <img src="./Icons/instagram.png" />
+                <a href="https://twitter.com/Therealnicron"><img src="./Icons/twitter.png" /></a>
             </div>
         </div>
 
@@ -200,6 +202,7 @@
             </script>
             <script src="./JS/index.js">
             </script>
+   <script src="./JS/index.js"></script>
             <script>
                 AOS.init({
                     offset: 300,

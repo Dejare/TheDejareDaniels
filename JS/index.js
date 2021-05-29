@@ -1,37 +1,10 @@
-const inputs = document.querySelectorAll(".form-input");
+const open = document.getElementById("hamburger");
+const close = document.getElementById("closehamburger");
+const nav = document.getElementById("navo");
 
-inputs.forEach((input) => {
-    input.addEventListener("focus", (event) => {
-      const parent = event.target.parentElement;
-      parent.classList.add("focused");
-    });
-  });
-  
-  inputs.forEach((input) => {
-    input.addEventListener("blur", (event) => {
-      const parent = event.target.parentElement;
-      if (!event.target.value) {
-        parent.classList.remove("focused");
-      }
-    });
-  });
-
-const handleMessageCount = () => {
-
-  var msg = document.getElementById("message").value;
-  var msgCount = document.getElementById("message-count")
-  var msgLength = msg.length;
-  const maxLength = 1000;
-  var charLeft = maxLength - msgLength;
-  msgCount.innerText = charLeft;
-  }
-
-
-
-const nav = document.getElementById('navhamburger')
-
-nav.addEventListener('click', click)
-
-function click() {
-  alert('Hey, We Noticed You Clicked On The Nav, this site is under a development test run. We will get the nav working ASAP. Thanks, Dejare.')
-}
+open.addEventListener("click", function () {
+  nav.style.display = "block";
+});
+close.addEventListener("click", function () {
+  nav.style.display = "none";
+});

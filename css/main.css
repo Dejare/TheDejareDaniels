@@ -9,11 +9,11 @@
   box-sizing: border-box;
   overflow: unset;
 }
+.socialicons{
+  display: none;
+}
 body{
   overflow-x: hidden;
-}
-header{
-  margin-bottom: 0px !important;
 }
 /****loader***/
 
@@ -206,6 +206,50 @@ body {
   overflow: hidden;
   z-index: 5;
 }
+/***navbar*****/
+header{
+  width: 95%;
+}
+label{
+  float: left;
+  color: white;
+  margin: 20px;
+  font-size: 20px;
+  border-bottom: 2px solid #e73131;
+}
+
+#hamburger{
+  display: none;
+
+}
+#closehamburger{
+  display: none;
+}
+nav{
+  float: right;
+}
+nav ul{
+  margin-left: 20px;
+}
+nav ul li{
+  display: inline-block;
+  margin: 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+}
+nav ul li a:hover{
+  color: #eb3044;
+  border-bottom:2px solid #eb3044;
+}
+nav ul li a:active{
+  color: #eb3044;
+  border-bottom:2px solid #eb3044;
+}
+/**.**/
 .hero-text {
   position: absolute;
   top: 30%;
@@ -266,51 +310,7 @@ button:hover {
 }
 /**Hero section ends**/
 /**Header begins**/
-header {
-  width: 100%;
-  background-color: black;
-}
-.header-container {
-  width: 95%;
-  z-index: 2;
-  background-color: black;
-}
-.bg-header {
-  background-color: black;
-  opacity: 0.8;
-  width: 100%;
-  height: 5rem;
-  z-index: -1;
-}
-label {
-  float: left;
-  color: white;
-  margin: 20px 5rem;
-  text-decoration: underline #eb3044;
-  animation-delay: 2s;
-  position: absolute;
-}
-nav {
-  float: right;
-  animation-delay: 2s;
-  position: static;
-  top: -80%;
-}
-nav ul li {
-  display: inline-block;
-  margin: 20px;
-}
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  text-transform: capitalize;
-  font-weight: 400;
-  animation-delay: 2.5s;
-}
-nav ul li a:hover {
-  color: #eb3044;
-  text-decoration: overline;
-}
+
 /**Header ends, sidebar begins**/
 .sidebar img {
   width: 20px;
@@ -576,15 +576,7 @@ textarea {
 }
 /*******RESPONSIVE MOBILE.******/
 @media (max-width: 460px) {
-  header nav {
-    display: none;
-  }
-  #navhamburger{
-    font-size: 2rem;
-    display: block;
-    color: white;
-    float: right;
-  }
+
   body{
     overflow-x: hidden;
   }
@@ -763,12 +755,6 @@ textarea {
   body{
     overflow-x: hidden;
   }
-  #navhamburger{
-    font-size: 2rem;
-    display: block;
-    float: right;
-    color: white;
-  }
   .hero-image {
     height: 120vh;
   }
@@ -825,5 +811,52 @@ textarea {
   .services-text hr {
     position: relative;
     left: 40%;
+  }
+}
+@media (max-width: 800px){
+  #navo{
+    display: none;
+    background: #e73131;
+    width: 100%;
+    height: 90vh;
+    position: fixed;
+    z-index: 120;
+}
+nav ul li{
+    display: block;
+    margin: 20px;
+}
+nav ul li a{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.socialicons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialicons img{
+    width: 30px;
+    margin: 20px;
+}
+#hamburger{
+    display: block;
+    float: right;
+    color: white;
+    font-size: 2rem;
+    margin: 10px 20px 20px 20px;
+    cursor: pointer;
+}
+#closehamburger{
+    display: block;
+    float: right;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 20px 20px 0px;
+    cursor: pointer;
   }
 }
