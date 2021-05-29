@@ -677,7 +677,7 @@ textarea {
   /**About**/
   .about {
     width: 100%;
-    height: 160vh;
+    height: fit-content;
     background: rgb(22, 22, 22);
   }
   .about h1 {
@@ -777,7 +777,7 @@ textarea {
     display: none;
   }
   .about {
-    height: 130vh;
+    height: fit-content;
   }
   .services-mainboxes:hover{
     border-radius: none;
@@ -818,6 +818,9 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .about{
+
   }
 }
 @media (max-width: 800px){
