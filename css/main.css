@@ -46,7 +46,7 @@ header{
   width: 35px;
   height: 15px;
   border-radius: 8px;
-  background: #e73131;
+  background: #eb3044;
   z-index: 5;
 }
 
@@ -67,7 +67,7 @@ header{
   top: 10%;
   left: 50%;
   transform: translate(-50%, -90%);
-  color: #e73131;
+  color: #eb3044;
 }
 .tres {
   transform-origin: center right;
@@ -224,7 +224,7 @@ body {
   width: 3rem;
   margin: 30px 0px;
   height: 5px;
-  background: hsl(9, 100%, 64%);
+  background:#eb3044;
   border: none;
 }
 .hero-text p {
@@ -236,7 +236,7 @@ body {
 }
 .hero-cta button {
   margin: 20px 0px;
-  background: #e73131;
+  background: #eb3044;
   padding-top: 16px;
   padding-right: 35px;
   padding-bottom: 15px;
@@ -253,7 +253,7 @@ button a {
   text-align: center;
 }
 button:hover {
-  background-color: rgb(194, 40, 13);
+  background-color: #e61a2f;
 }
 .footer-copyright {
   background: rgb(175, 86, 71);
@@ -286,7 +286,7 @@ label {
   float: left;
   color: white;
   margin: 20px 5rem;
-  text-decoration: underline #e73131;
+  text-decoration: underline #eb3044;
   animation-delay: 2s;
   position: absolute;
 }
@@ -308,7 +308,7 @@ nav ul li a {
   animation-delay: 2.5s;
 }
 nav ul li a:hover {
-  color: #e73131;
+  color: #eb3044;
   text-decoration: overline;
 }
 /**Header ends, sidebar begins**/
@@ -331,7 +331,7 @@ nav ul li a:hover {
 }
 .sidebar img:hover {
   background-color: none;
-  border: 2px solid #e73131;
+  border: 2px solid #eb3044;
   border-radius: 35px;
   padding: 10px;
 }
@@ -364,7 +364,7 @@ nav ul li a:hover {
 .services-divi {
   width: 10%;
   height: 0.4rem;
-  background-color: #e73131;
+  background-color: #eb3044;
   position: absolute;
   right: 45%;
   margin-top: 5px;
@@ -393,7 +393,7 @@ nav ul li a:hover {
   width: 3rem;
   margin: 30px 0px;
   height: 5px;
-  background: hsl(9, 100%, 64%);
+  background: #eb3044;
   border: none;
 }
 .servicesvg {
@@ -430,7 +430,7 @@ nav ul li a:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 .services-mainboxes .box1 , .box2, .box3 {
-  background: #e73131;
+  background: #eb3044;
 }
 .services-mainboxes .box1:hover , .box2:hover, .box3:hover{
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -455,7 +455,7 @@ nav ul li a:hover {
 .about hr {
   width: 10%;
   height: 0.8rem;
-  background-color: #e73131;
+  background-color: #eb3044;
   position: absolute;
   right: 45%;
   margin-top: 5px;
@@ -481,7 +481,7 @@ nav ul li a:hover {
   padding-bottom: 2rem;
 }
 .details h2 span {
-  color: #e73131;
+  color: #eb3044;
   text-decoration: underline;
 }
 .details p {
@@ -553,7 +553,7 @@ textarea {
 }
 .presskit a:hover {
   padding: 0.2rem;
-  border-bottom: 2px solid #e73131;
+  border-bottom: 2px solid #eb3044;
 }
 .presskit a:last-child {
   margin-left: 3rem;
@@ -677,7 +677,7 @@ textarea {
   .box2,
   .box3,
   .box4 {
-    background: #e73131;
+    background: #eb3044;
   }
   .sidebar {
     display: none;
@@ -697,7 +697,7 @@ textarea {
   .about hr {
     width: 10%;
     height: 0.8rem;
-    background-color: #e73131;
+    background-color: #eb3044;
     position: absolute;
     right: 45%;
     margin-top: 5px;
@@ -721,7 +721,7 @@ textarea {
     text-align: center;
   }
   .details h2 span {
-    color: #e73131;
+    color: #eb3044;
     text-decoration: underline;
   }
   .details p {
@@ -734,7 +734,7 @@ textarea {
     color: white;
     padding: 16px 35px 16px 16px;
     font-size: 1.3rem;
-    background: #e73131;
+    background: #eb3044;
     position: relative;
     left: 25%;
     margin-top: 5rem;
