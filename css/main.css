@@ -599,7 +599,7 @@ textarea {
     position: relative;
     margin: 20px 0px;
     height: 5px;
-    background: hsl(9, 100%, 64%);
+    background: #eb3044;
     left: 8rem;
   }
   .contact{
@@ -639,7 +639,7 @@ textarea {
     margin: 20px 0px;
     position: relative;
     height: 5px;
-    background: hsl(9, 100%, 64%);
+    background: #eb3044;
     border: none;
     left: 7.5rem;
   }
@@ -811,6 +811,13 @@ textarea {
   .services-text hr {
     position: relative;
     left: 40%;
+    color: #eb3044;
+  }
+  .servicesvg{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 800px){
