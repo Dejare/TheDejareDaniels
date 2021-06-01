@@ -831,6 +831,7 @@ textarea {
     height: 90vh;
     position: fixed;
     z-index: 120;
+    transition:top 2ms ease;
 }
 nav ul li{
     display: block;
@@ -842,6 +843,10 @@ nav ul li a{
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
+}
+nav ul li a:hover{
+  color: white;
+  border-bottom: 2px solid white;
 }
 .socialicons{
     width: 100%;
