@@ -18,8 +18,8 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 45%;
-    left: 30%;
+    top: 50%;
+    left: 35%;
     transform: translate(-45% -45%);
     /**animation: loader;
     animation-duration: 4s;
@@ -31,8 +31,8 @@
     flex-direction: row;
     position: absolute;
     margin-top: -50px;
-    top: 70%;
-    left: 30%;
+    top: 75%;
+    left: 35%;
     transform: translate(-41% -68%);
     color:#e73131;
 }
